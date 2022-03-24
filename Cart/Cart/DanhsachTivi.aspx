@@ -68,6 +68,36 @@
                     <asp:Label ID="Label1" runat="server" ForeColor="White"></asp:Label>
                 </div>
             </div>
+            <div class=" justify-content-right text-left">
+                <div class="contents pt-3">
+                    <div class="contents pt-0-5">
+                        <h2 class="pt-3">TIVI NỔI BẬT NHẤT
+                        </h2>
+                    </div>
+                    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" BorderRadius="15px" BackColor="#EB018A" BorderColor="#EB018A" BorderWidth="2px" CellPadding="6" CellSpacing="6" RepeatColumns="6" RepeatDirection="Horizontal" Width="1150px" OnItemCommand="SelectedIndex" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+                        <ItemTemplate>
+                            <div class="card-deck">
+                                <div class="card zoom" style="height: 300px">
+                                    <div class="imgs pt-3">
+                                        <asp:ImageButton ID="ImageButton1" runat="server" CommandName="redirect" Height="130px" Width="208px" ImageUrl='<%# Eval("HinhAnh") %>' />
+                                    </div>
+                                    <div class="card-body" style="font-size: 11px">
+                                        Tensp:
+                                        <asp:Label ID="TenspLabel" runat="server" Text='<%# Eval("Tensp") %>' />
+                                        <br />
+                                        Dongia:
+                                        <asp:Label ID="DongiaLabel" runat="server" Text='<%# Eval("Dongia") %>' />
+                                        <br />
+                                        Kichthuoc:
+                                        <asp:Label ID="KichthuocLabel" runat="server" Text='<%# Eval("Kichthuoc") %>' />
+                                        <br />
+                                    </div>
+                        </ItemTemplate>
+                    </asp:DataList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Tensp], [Dongia], [Kichthuoc], [HinhAnh] FROM [TiVi] WHERE NOIBAT = 'NOIBAT'"></asp:SqlDataSource>
+                    <asp:Label ID="Label2" runat="server" ForeColor="White"></asp:Label>
+                </div>
+            </div>
         </div>
     </form>
     <script src="bootstrap/jquery-3.6.0.min.js"></script>

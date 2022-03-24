@@ -61,8 +61,8 @@
                             </div>
                         </ItemTemplate>
                     </asp:DataList>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Tensp], [HinhAnh], [DonGia] FROM [DienThoai] WHERE DEALS = 'DEALS'"></asp:SqlDataSource>
-                    <asp:Label ID="Label1" runat="server" ForeColor="White"></asp:Label>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Masp], [Tensp], [HinhAnh], [DonGia] FROM [DienThoai] WHERE DEALS = 'DEALS'"></asp:SqlDataSource>
+
                 </div>
             </div>
             <div class=" justify-content-right text-left">
@@ -87,8 +87,7 @@
                             </div>
                         </ItemTemplate>
                     </asp:DataList>
-                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Tensp], [HinhAnh], [DonGia] FROM [DienThoai] WHERE NOIBAT = 'Noibat'"></asp:SqlDataSource>
-                    <asp:Label ID="Label2" runat="server" ForeColor="White"></asp:Label>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Masp], [Tensp], [HinhAnh], [DonGia] FROM [DienThoai] WHERE NOIBAT = 'Noibat'"></asp:SqlDataSource>
                 </div>
             </div>
             <div class=" justify-content-right text-left">
@@ -113,10 +112,10 @@
                             </div>
                         </ItemTemplate>
                     </asp:DataList>
-                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Tensp], [HinhAnh], [DonGia] FROM [DienThoai]"></asp:SqlDataSource>
-                    <asp:Label ID="Label3" runat="server" ForeColor="White"></asp:Label>
+                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Masp], [Tensp], [HinhAnh], [DonGia] FROM [DienThoai]"></asp:SqlDataSource>
                 </div>
             </div>
+            <asp:Label ID="Label1" runat="server" ForeColor="White"></asp:Label>
         </div>
     </form>
     <script src="bootstrap/jquery-3.6.0.min.js"></script>

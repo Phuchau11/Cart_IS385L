@@ -15,12 +15,7 @@ namespace Cart
         }
         protected void SelectedIndex(object source, DataListCommandEventArgs e)
         {
-            if (e.CommandName == "redirect")
-            {
-                Label1.Text = DataList2.DataKeys[e.Item.ItemIndex].ToString();
-                Session["ID"] = Label1.Text;
-                Response.Redirect("chitietdt.aspx");
-            }
+
         }
         protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
         {
