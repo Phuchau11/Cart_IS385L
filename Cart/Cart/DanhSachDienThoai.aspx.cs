@@ -19,7 +19,7 @@ namespace Cart
             {
                 Label1.Text = DataList2.DataKeys[e.Item.ItemIndex].ToString();
                 Session["ID"] = Label1.Text;
-                Response.Redirect("ThongTinChiTiet.aspx");
+                Response.Redirect("chitietdt.aspx");
             }
         }
         protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
