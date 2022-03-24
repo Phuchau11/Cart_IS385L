@@ -165,6 +165,7 @@
     <Content Include="Images\Content\content.jpg" />
     <Content Include="Images\Content\dessss-1200x90.png" />
     <Content Include="Images\Content\dmxd-1200x90.png" />
+    <Content Include="Images\Content\Taglinedealsoc-1920x144-1.png" />
     <Content Include="Images\LapTops\acer-nitro-5-gaming-an515-45-r6ev-r5-5600h.jpg" />
     <Content Include="Images\LapTops\acer-nitro-5-gaming-an515-57-54mv-i5-11400h.jpg" />
     <Content Include="Images\LapTops\apple-macbook-pro-14-m1-pro.jpg" />
@@ -205,7 +206,7 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\TiVi\tv1.jpg" />
     <Content Include="ThongTinChiTiet.aspx" />
-    <Content Include="WebDienThoai.aspx" />
+    <Content Include="DanhsachTivi.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\DienThoais\Galaxy-S22-Ultra-Burgundy-600x600.jpg" />
     <Content Include="Images\DienThoais\iphone-12-mini-mau-tim-3-600x600.jpg" />
@@ -419,12 +420,12 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="WebDienThoai.aspx.cs">
-      <DependentUpon>WebDienThoai.aspx</DependentUpon>
+    <Compile Include="DanhsachTivi.aspx.cs">
+      <DependentUpon>DanhsachTivi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebDienThoai.aspx.designer.cs">
-      <DependentUpon>WebDienThoai.aspx</DependentUpon>
+    <Compile Include="DanhsachTivi.aspx.designer.cs">
+      <DependentUpon>DanhsachTivi.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
