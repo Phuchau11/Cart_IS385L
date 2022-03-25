@@ -11,7 +11,7 @@ namespace Cart
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Label1.Text = Session["ID"].ToString();
         }
     }
 }

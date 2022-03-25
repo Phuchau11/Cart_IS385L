@@ -44,23 +44,23 @@
                 <asp:Label ID="Label2" runat="server" ForeColor="White" BackColor="#6666FF"></asp:Label>
                 <asp:DataList ID="DataList1" runat="server" DataSourceID="QUERY_SELECT" RepeatColumns="1" RepeatDirection="Horizontal">
                     <ItemTemplate>
-                        <asp:Image ID="Image2" runat="server" Height="335px" ImageUrl='<%# Eval("HinhAnh") %>' Width="499px" />
-                        <asp:Label ID="TenspLabel" runat="server" Text='<%# Eval("Tensp") %>' />
-                        <asp:Label ID="HinhAnhLabel" runat="server" Text='<%# Eval("HinhAnh") %>' />
-                        <asp:Label ID="DonGiaLabel" runat="server" Text='<%# Eval("DonGia") %>' />
-                        <asp:Label ID="ManHinhLabel" runat="server" Text='<%# Eval("ManHinh") %>' />
-                        <asp:Label ID="CamSauLabel" runat="server" Text='<%# Eval("CamSau") %>' />
-                        <asp:Label ID="CamTruocLabel" runat="server" Text='<%# Eval("CamTruoc") %>' />
-                        <asp:Label ID="CPULabel" runat="server" Text='<%# Eval("CPU") %>' />
-                        <asp:Label ID="RamLabel" runat="server" Text='<%# Eval("Ram") %>' />
-                        <asp:Label ID="ROMLabel" runat="server" Text='<%# Eval("ROM") %>' />
-                        <asp:Label ID="SimLabel" runat="server" Text='<%# Eval("Sim") %>' />
-                        <asp:Label ID="PinLabel" runat="server" Text='<%# Eval("Pin") %>' />
+                        <asp:Image ID="Image2" runat="server" Height="335px" ImageUrl='<%# Eval("HinhAnh") %>' Width="335px" /><br />
+                        <asp:Label ID="TenspLabel" runat="server" Text='<%# Eval("Tensp") %>' /><br />
+                        <asp:Label ID="HinhAnhLabel" runat="server" Text='<%# Eval("HinhAnh") %>' /><br />
+                        <asp:Label ID="DonGiaLabel" runat="server" Text='<%# Eval("DonGia") %>' /><br />
+                        <asp:Label ID="ManHinhLabel" runat="server" Text='<%# Eval("ManHinh") %>' /><br />
+                        <asp:Label ID="CamSauLabel" runat="server" Text='<%# Eval("CamSau") %>' /><br />
+                        <asp:Label ID="CamTruocLabel" runat="server" Text='<%# Eval("CamTruoc") %>' /><br />
+                        <asp:Label ID="CPULabel" runat="server" Text='<%# Eval("CPU") %>' /><br />
+                        <asp:Label ID="RamLabel" runat="server" Text='<%# Eval("Ram") %>' /><br />
+                        <asp:Label ID="ROMLabel" runat="server" Text='<%# Eval("ROM") %>' /><br />
+                        <asp:Label ID="SimLabel" runat="server" Text='<%# Eval("Sim") %>' /><br />
+                        <asp:Label ID="PinLabel" runat="server" Text='<%# Eval("Pin") %>' /><br />
                     </ItemTemplate>
                 </asp:DataList>
                 <asp:SqlDataSource ID="QUERY_SELECT" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Masp], [Tensp], [HinhAnh], [DonGia], [ManHinh], [CamSau], [CamTruoc], [CPU], [Ram], [ROM], [Sim], [Pin] FROM [DienThoai] WHERE ([Masp] = @Masp)">
                     <SelectParameters>
-                        <asp:ControlParameter ControlID="Label1" Name="Id" PropertyName="Text" Type="Int32" />
+                        <asp:ControlParameter ControlID="Label1" Name="Masp" PropertyName="Text" Type="String" />
                     </SelectParameters>
                 </asp:SqlDataSource>
             </div>

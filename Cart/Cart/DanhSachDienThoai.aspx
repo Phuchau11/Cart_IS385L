@@ -44,7 +44,7 @@
                     <div class="contents pt-0-5">
                         <img src="Images/Content/dessss-1200x90.png" style="width: 1336px; height: 100px" />
                     </div>
-                    <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource1" BorderRadius="15px" BackColor="#FFBF00" BorderColor="#FFBF00" BorderWidth="2px" CellPadding="6" CellSpacing="6" RepeatColumns="6" RepeatDirection="Horizontal" Width="1150px" OnItemCommand="SelectedIndex" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+                    <asp:DataList ID="DataList2" runat="server" BorderRadius="15px" BackColor="#FFBF00" BorderColor="#FFBF00" BorderWidth="2px" CellPadding="6" CellSpacing="6" DataKeyField="Masp" DataSourceID="SqlDataSource1" RepeatColumns="6" RepeatDirection="Horizontal" Width="1150px" OnItemCommand="SelectedIndex2" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
                         <ItemTemplate>
                             <div class="card-deck">
                                 <div class="card zoom" style="height: 300px">
@@ -61,6 +61,7 @@
                             </div>
                         </ItemTemplate>
                     </asp:DataList>
+
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Masp], [Tensp], [HinhAnh], [DonGia] FROM [DienThoai] WHERE DEALS = 'DEALS'"></asp:SqlDataSource>
 
                 </div>
@@ -70,7 +71,7 @@
                     <div class="contents pt-0-5">
                         <h2 class="pt-3">ĐIỆN THOẠI NỔI BẬT NHẤT</h2>
                     </div>
-                    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource2" BorderRadius="15px" BackColor="White" BorderColor="White" BorderWidth="2px" CellPadding="6" CellSpacing="6" RepeatColumns="6" RepeatDirection="Horizontal" Width="1150px" OnItemCommand="SelectedIndex" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+                    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource2" DataKeyField="Masp" BorderRadius="15px" BackColor="White" BorderColor="White" BorderWidth="2px" CellPadding="6" CellSpacing="6" RepeatColumns="6" RepeatDirection="Horizontal" Width="1150px" OnItemCommand="SelectedIndex1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
                         <ItemTemplate>
                             <div class="card-deck">
                                 <div class="card zoom" style="height: 300px">
@@ -95,7 +96,7 @@
                     <div class="contents pt-0-5">
                         <h2 class="pt-3">TẤT CẢ SẢN PHẨM</h2>
                     </div>
-                    <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSource3" BorderRadius="15px" BackColor="White" BorderColor="White" BorderWidth="2px" CellPadding="6" CellSpacing="6" RepeatColumns="6" RepeatDirection="Horizontal" Width="1150px" OnItemCommand="SelectedIndex" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+                    <asp:DataList ID="DataList3" runat="server" DataKeyField="Masp" DataSourceID="SqlDataSource3" BorderRadius="15px" BackColor="White" BorderColor="White" BorderWidth="2px" CellPadding="6" CellSpacing="6" RepeatColumns="6" RepeatDirection="Horizontal" Width="1150px" OnItemCommand="SelectedIndex3" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
                         <ItemTemplate>
                             <div class="card-deck">
                                 <div class="card zoom" style="height: 300px">
