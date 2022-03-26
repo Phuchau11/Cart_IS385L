@@ -233,7 +233,6 @@
     <Content Include="bootstrap\MDB5-STANDARD-UI-KIT-Free-3.11.0\src\js\mdb\util\touch\swipe.js" />
     <Content Include="bootstrap\MDB5-STANDARD-UI-KIT-Free-3.11.0\src\js\mdb\util\touch\touchUtil.js" />
     <Content Include="bootstrap\script.js" />
-    <Content Include="chitietdt.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -248,6 +247,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="GioHang.aspx" />
+    <Content Include="GioiThieu.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -267,7 +267,10 @@
     <Content Include="bootstrap\js\bootstrap.bundle.min.js.map" />
     <Content Include="bootstrap\js\bootstrap.js.map" />
     <Content Include="bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="GuiYeuCauHoTro.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="Hotro.aspx" />
+    <Content Include="HuongDanDatHang.aspx" />
     <Content Include="Images\Content\690-300-690x300-15.png" />
     <Content Include="Images\Content\content1.jpg" />
     <Content Include="Images\Content\content2.jpg" />
@@ -299,7 +302,6 @@
     <Content Include="Images\LapTops\lenovo-ideapad-3-15iml05-i3-10110u.jpg" />
     <Content Include="Images\LapTops\lenovo-yoga-9-14itl5-i7-82bg006evn-21-600x600.jpg" />
     <Content Include="Images\LapTops\lenovo-yoga-duet-7-13itl6-i5-82ma000pvn.jpg" />
-    <Content Include="Images\LapTops\lenovo-yoga-slim-7-14itl05-i7-1165g7.jpg" />
     <Content Include="Images\LapTops\lg-gram-16-i7-16z90pgah73a5-600x600.jpg" />
     <Content Include="Images\LapTops\macbook-air-m1-2020-gray-600x600.jpg" />
     <Content Include="Images\LapTops\macbook-air-m1-2020.jpg" />
@@ -308,10 +310,7 @@
     <Content Include="Images\LapTops\msi-creator-z16p-b12ugst-i7-12700h-32gb-2tb-ssd-8gb-rtx3070ti-max-q-600x600.jpg" />
     <Content Include="Images\LapTops\msi-gaming-ge66-raider-11uh-i7-259vn-600x600.jpg" />
     <Content Include="Images\LapTops\msi-gaming-gf63-thin-11uc-i5-11400h.jpg" />
-    <Content Include="Images\LapTops\msi-gaming-gs66-stealth-11ug-i7-219vn-600x600.jpg" />
     <Content Include="Images\LapTops\msi-gaming-pulse-gl66-11udk-i7-816vn-051121-023122-600x600.jpg" />
-    <Content Include="Images\LapTops\msi-gaming-stealth-15m-a11uek-i7-254vn-600x600.jpg" />
-    <Content Include="Images\LapTops\Surface-Laptop-Studio-600x600.jpg" />
     <Content Include="Images\LapTops\Surface-Pro-8-Platinum-600x600.jpg" />
     <Content Include="Images\LapTops\thinkbook-14p-g2-ach-r5-.jpg" />
     <Content Include="Images\logo.png" />
@@ -648,6 +647,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="TongQuan.aspx" />
+    <Content Include="TuyenDung.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -663,13 +663,6 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="chitietdt.aspx.cs">
-      <DependentUpon>chitietdt.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="chitietdt.aspx.designer.cs">
-      <DependentUpon>chitietdt.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -712,8 +705,22 @@
     <Compile Include="GioHang.aspx.designer.cs">
       <DependentUpon>GioHang.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GioiThieu.aspx.cs">
+      <DependentUpon>GioiThieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioiThieu.aspx.designer.cs">
+      <DependentUpon>GioiThieu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GuiYeuCauHoTro.aspx.cs">
+      <DependentUpon>GuiYeuCauHoTro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuiYeuCauHoTro.aspx.designer.cs">
+      <DependentUpon>GuiYeuCauHoTro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -721,6 +728,20 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotro.aspx.cs">
+      <DependentUpon>Hotro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hotro.aspx.designer.cs">
+      <DependentUpon>Hotro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HuongDanDatHang.aspx.cs">
+      <DependentUpon>HuongDanDatHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HuongDanDatHang.aspx.designer.cs">
+      <DependentUpon>HuongDanDatHang.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -764,6 +785,13 @@
     </Compile>
     <Compile Include="TongQuan.aspx.designer.cs">
       <DependentUpon>TongQuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TuyenDung.aspx.cs">
+      <DependentUpon>TuyenDung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TuyenDung.aspx.designer.cs">
+      <DependentUpon>TuyenDung.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
