@@ -24,7 +24,7 @@
     <form id="form1" runat="server">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand pl-3" href="/tongquan">
+            <a class="navbar-brand pl-3" href="/home">
                 <img src="Images/logo.png" /></a>
             <div class="collapse navbar-collapse pl-5" id="navbarSupportedContent">
                 <!-- Propeller Dropdown -->
