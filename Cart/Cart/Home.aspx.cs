@@ -54,5 +54,16 @@ namespace Cart
         {
 
         }
+
+        protected void btnSearch_Click(object sender, EventArgs e)// tìm kiếm sản phẩm
+        {
+            Session["FIND"] = txtSearch.Text;
+            Response.Redirect("TimKiem.aspx");
+        }
+
+        protected void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

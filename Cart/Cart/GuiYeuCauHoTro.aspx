@@ -11,6 +11,7 @@
         <div>
             <h1>ĐÃ BẢO RA CHỖ KHÁC CHƠI :)))))</h1>
         </div>
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
     </form>
 </body>
 </html>

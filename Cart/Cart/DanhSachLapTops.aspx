@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand pl-3" href="/tongquan">
+            <a class="navbar-brand pl-3" href="/home">
                 <img src="Images/logo.png" /></a>
             <div class="collapse navbar-collapse pl-5" id="navbarSupportedContent">
                 <!-- Propeller Dropdown -->
@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-inline my-2 my-lg-0 pl-3">
                     <asp:TextBox ID="txtSearch" class="form-control" placeholder="Thông tin tìm kiếm" aria-label="Search" runat="server" Width="500px"></asp:TextBox>
-                    <asp:Button ID="btnSearch" class="btn btn-primary" runat="server" Text="Tìm kiếm" Height="38px" Width="120px" />
+                    <asp:Button ID="btnSearch" class="btn btn-primary" runat="server" Text="Tìm kiếm" Height="38px" Width="120px" OnClick="btnSearch_Click" />
                 </div>
                 <div class="form-inline my-2 my-lg-0 pl-5">
                     <i class="fa-regular fa-circle-user fa-2xl"></i>

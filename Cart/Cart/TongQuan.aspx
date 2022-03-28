@@ -30,7 +30,7 @@
                 </div>
                 <div class="form-inline my-2 my-lg-0 pl-3">
                     <asp:TextBox ID="txtSearch" class="form-control" placeholder="Thông tin tìm kiếm" aria-label="Search" runat="server" Width="500px"></asp:TextBox>
-                    <asp:Button ID="btnSearch" class="btn btn-primary" runat="server" Text="Tìm kiếm" Height="38px" Width="120px" />
+                    <asp:Button ID="btnSearch" class="btn btn-primary" runat="server" Text="Tìm kiếm" Height="38px" Width="120px" OnClick="btnSearch_Click" />
                 </div>
                 <div class="form-inline my-2 my-lg-0 pl-3">
                     <asp:Button ID="txtLogin" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal" runat="server" Text="Đăng nhập" Height="38px" Width="120px" OnClick="txtLogin_Click" />

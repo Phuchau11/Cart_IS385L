@@ -37,8 +37,8 @@
                     </div>
                 </div>
                 <div class="form-inline my-2 my-lg-0 pl-3">
-                    <asp:TextBox ID="txtSearch" class="form-control" placeholder="Thông tin tìm kiếm" aria-label="Search" runat="server" Width="500px"></asp:TextBox>
-                    <asp:Button ID="btnSearch" class="btn btn-primary" runat="server" Text="Tìm kiếm" Height="38px" Width="120px" />
+                    <asp:TextBox ID="txtSearch" class="form-control" placeholder="Thông tin tìm kiếm" aria-label="Search" runat="server" Width="500px" OnTextChanged="txtSearch_TextChanged"></asp:TextBox>
+                    <asp:Button ID="btnSearch" class="btn btn-primary" runat="server" Text="Tìm kiếm" Height="38px" Width="120px" OnClick="btnSearch_Click" />
                 </div>
                 <div class="form-inline my-2 my-lg-0 pl-5">
                     <i class="fa-regular fa-circle-user fa-2xl"></i>
@@ -108,7 +108,7 @@
                     <asp:DataList ID="DataList1" BorderRadius="15px" runat="server" DataKeyField="MASP" BackColor="#023f88" BorderColor="#023f88" BorderWidth="2px" CellPadding="6" CellSpacing="6" DataSourceID="PRODUCTS" RepeatColumns="6" RepeatDirection="Horizontal" Width="1150px" OnItemCommand="SelectedIndex1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
                         <ItemTemplate>
                             <div class="card-deck">
-                                <div class="card zoom" style="height: 300px">
+                                <div class="card zoom" style="height: 400px">
                                     <div class="imgs pt-3">
                                         <asp:ImageButton ID="ImageButton1" runat="server" CommandName="redirect" Height="139px" Width="208px" ImageUrl='<%# Eval("ANHSP") %>' />
                                     </div>

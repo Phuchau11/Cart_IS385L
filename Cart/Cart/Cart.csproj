@@ -646,6 +646,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="TimKiem.aspx" />
     <Content Include="TongQuan.aspx" />
     <Content Include="TuyenDung.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -778,6 +779,13 @@
     </Compile>
     <Compile Include="ThongTinChiTiet.aspx.designer.cs">
       <DependentUpon>ThongTinChiTiet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem.aspx.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimKiem.aspx.designer.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
     </Compile>
     <Compile Include="TongQuan.aspx.cs">
       <DependentUpon>TongQuan.aspx</DependentUpon>

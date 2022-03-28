@@ -21,12 +21,19 @@ namespace Cart
             {
                 Label1.Text = DataList3.DataKeys[e.Item.ItemIndex].ToString();
                 Session["ID"] = Label1.Text;
+                Session["LOAI"] = "TiVi";
                 Response.Redirect("ThongTinChiTiet.aspx");
             }
         }
         protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            Session["FIND"] = txtSearch.Text;
+            Response.Redirect("TimKiem.aspx");
         }
     }
 }
